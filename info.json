@@ -1,0 +1,45 @@
+{
+  "about": {
+    "name": "alice hwang",
+    "education": {
+      "school": "columbia university",
+      "graduation": "may 2017",
+      "degree": "bachelor of science",
+      "major": "computer science"
+    },
+    "location": "los angeles"
+  },
+  "contact": {
+    "email": "alice.k.hwang@gmail.com",
+    "github": "hwangks"
+  },
+  "technology": 
+  [
+    "c/c++",
+    "java",
+    "python",
+    "sql",
+    "git",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "interests": {
+    "games": {
+      "rhythm": "deemo",
+      "moba": "league of legends",
+      "rpg": "fire emblem"
+    },
+    "shows":[
+      "bob's burgers",
+      "archer",
+      "criminal minds",
+      "the great british bakeoff"
+      "natsume yuujinchou"
+    ],
+    "obscure": [
+      "collecting makeup",
+      "going to bakeries/cafes"
+    ]
+  }
+}
