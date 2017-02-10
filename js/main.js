@@ -1,6 +1,6 @@
 // var colors = ['#ee8a94', '#f2c08f', '#f5eacc', '#cce0af', '#a7bfe1'];
 var ids = $('.table-cell').map(function(){ return this.id }).toArray();
-var fadeTime = 1000;
+var fadeTime = 500;
 var color = '#cce0af'
 var topic;
 var current;
