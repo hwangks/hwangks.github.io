@@ -71,6 +71,18 @@ html, body{
 	opacity: 1;
 }
 
+a{
+	color: #2c2c2c;
+	text-decoration: none;
+}
+a:hover{
+	color: #000;
+	transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+}
+
 .info{
 	position: absolute;
 	width: 100%;
