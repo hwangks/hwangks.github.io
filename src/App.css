@@ -1,0 +1,88 @@
+:root {
+  --dark-brown: rgba(48, 42, 39, 1);
+  --brown: rgba(71, 65, 59, 1);
+  --pink: rgba(247, 76, 153, 1);
+  --orange: rgba(242, 100, 29, 1);
+  --yellow: rgba(255, 217, 2, 1);
+  --green: rgba(73, 142, 48, 1);
+  --blue: rgba(0, 104, 201, 1);
+  --purple: rgba(142, 60, 163, 1);
+}
+
+.App {
+  text-align: center;
+  width: 450px;
+  margin: 0 auto;
+  color: var(--dark-brown);
+}
+i {
+  font-size: 1.8em;
+  color: var(--brown);
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-icon {
+  flex: 1 0 10%;
+}
+.nav-icon:hover .tooltip {
+  visibility: visible;
+}
+.nav-icon>.about:hover, .about.selected {
+  color: var(--blue);
+}
+.nav-icon>.skills:hover, .skills.selected {
+  color: var(--orange);
+}
+.nav-icon>.projects:hover, .projects.selected {
+  color: var(--green);
+}
+.nav-icon>.interests:hover, .interests.selected {
+  color: var(--purple);
+}
+.nav-icon>.contact:hover, .contact.selected {
+  color: var(--pink);
+}
+
+.icon-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.icon {
+  display: flex;
+  margin: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex: 1 0 10%;
+  pointer-events: none;
+}
+.selected {
+  pointer-events: auto;
+}
+.tooltip {
+  font-family: 'Lobster', cursive;
+  font-weight: normal;
+  font-size: 12px;
+  color: var(--dark-brown);
+  word-wrap: break-word;
+  white-space: normal;
+  visibility: hidden;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--yellow);
+}
+.icon:hover .selected .tooltip {
+  visibility: visible;
+}
