@@ -1,9 +1,4 @@
-personal webpage
----
-just a page i made for practice
-
-### todo:
-+ mobile view
-+ use json file
-+ more responsive formatting
-+ probably better to change from css table to grid formatting
+# green-grid
++ hover and click categories to show corresponding info boxes
++ click category box again to revert to initial format
++ [preview](https://rawgit.com/hwangks/hwangks.github.io/green-grid/index.html)
