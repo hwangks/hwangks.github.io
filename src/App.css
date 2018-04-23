@@ -22,9 +22,6 @@ i {
 a {
   text-decoration: none;
 }
-a:hover {
-  cursor: pointer;
-}
 
 .nav {
   display: flex;

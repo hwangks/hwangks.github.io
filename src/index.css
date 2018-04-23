@@ -9,5 +9,5 @@ body {
   justify-content: center;
   align-content: center;
   background-color: rgba(48, 42, 39, 1);
-  cursor: crosshair;
+  cursor: default;
 }
