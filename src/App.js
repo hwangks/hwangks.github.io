@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import Nav from './components/Nav';
 import IconBox from './components/IconBox';
 
@@ -10,29 +9,30 @@ class App extends Component {
     projects: false,
     interests: false,
     contact: false,
-    hovered: '',
-  }
+    hovered: ''
+  };
 
-  onSelect = (group) => {
+  onSelect = group => {
     this.setState(prev => ({ [group]: !prev[group] }));
-  }
+  };
 
-  onHoverStart = (group) => {
+  onHoverStart = group => {
     this.setState(() => ({ hovered: group }));
-  }
+  };
 
   onHoverEnd = () => {
     this.setState(() => ({ hovered: '' }));
-  }
+  };
 
   render() {
     return (
       <div className="App">
-        <Nav 
+        <Nav
           currState={this.state}
           onSelect={this.onSelect}
           onHoverStart={this.onHoverStart}
-          onHoverEnd={this.onHoverEnd} />
+          onHoverEnd={this.onHoverEnd}
+        />
         <IconBox currState={this.state} />
       </div>
     );
