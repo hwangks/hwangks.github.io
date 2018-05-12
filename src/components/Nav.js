@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Icon from './Icon';
 import { navIcons } from '../icons';
 
@@ -24,6 +25,13 @@ const Nav = ({ currState, onSelect, onHoverStart, onHoverEnd }) => {
       ))}
     </div>
   );
+};
+
+Nav.propTypes = {
+  currState: PropTypes.object.isRequired,
+  onSelect: PropTypes.func.isRequired,
+  onHoverStart: PropTypes.func.isRequired,
+  onHoverEnd: PropTypes.func.isRequired
 };
 
 export default Nav;

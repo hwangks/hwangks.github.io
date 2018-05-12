@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 const Icon = ({ icon, tags, selected, hovered }) => {
   const classes =
     icon.group + ' ' + tags + (selected || hovered ? ' selected' : '');
@@ -17,6 +19,14 @@ const Icon = ({ icon, tags, selected, hovered }) => {
       )}
     </div>
   );
+};
+
+Icon.propTypes = {
+  icon: PropTypes.object.isRequired,
+  tags: PropTypes.string.isRequired,
+  selected: PropTypes.bool.isRequired,
+  hovered: PropTypes.bool.isRequired,
+  key: PropTypes.number.isRequired
 };
 
 export default Icon;
